@@ -50,7 +50,7 @@ body {
       background-position: 40% 25%;
       height: 350px;
       margin: 0 auto;
-      margin-top: 5em;;
+      margin-top: 7em;;
       border: 12px solid #fff;
     }
 
@@ -87,7 +87,65 @@ body {
             color: black;
           }
 
+
+/*SKATEBOARDS*/
+
+
     .viewBoards {
       @include span-columns (12);
-      background-color: yellow;
     }
+
+
+    .contactPowell {
+      @include span-columns (12);
+      background-color: $offWhite;
+      margin-top: 3em;
+    }
+
+      .contactInfo {
+        @include span-columns(6 of 12);
+        padding-left: 2em;
+      }
+
+      .contactForm {
+        @include span-columns(6 of 12);
+        margin-top: 1em;
+        display: block;
+
+      }
+
+        .contactForm input {
+          display: block;
+          margin-top: 1em;
+          width: 90%;
+          height: 2.5em;
+          border-top: 4px solid #B2B2B2;
+          border-left: 4px solid #B2B2B2;
+          border-bottom: 1px solid #B2B2B2;
+          border-right: 1px solid #B2B2B2;
+        }
+
+        input[type=text],
+        input[type=email] {
+          font-family: $font-family;
+          font-size: 0.8em;
+          font-weight: 300;
+          color: #fff;
+          padding-left: 2%;
+          text-transform: uppercase;
+    }
+
+        .contactForm textarea {
+          display: block;
+          margin: 1em 0;
+          width: 90%;
+          height: 10em;
+          border-top: 4px solid #B2B2B2;
+          border-left: 4px solid #B2B2B2;
+          border-bottom: 1px solid #B2B2B2;
+          border-right: 1px solid #B2B2B2;
+        }
+
+        .visitSocial {
+          list-style: none;
+        }

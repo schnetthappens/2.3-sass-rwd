@@ -35,7 +35,8 @@ body {
   color: #BABABA;
   font-size: 0.8em; }
 
-.postText {
+.postText,
+.contactText {
   font-family: "Lato", sans-serif;
   color: #2F302C;
   font-size: 0.8em;
@@ -51,6 +52,10 @@ body {
 .postContent a {
   color: #C1001D;
   text-decoration: none; }
+
+.contactHeading {
+  font-family: "Lato", sans-serif;
+  font-weight: 300; }
 
 body {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/bg.jpg");
@@ -113,7 +118,7 @@ body {
   background-position: 40% 25%;
   height: 350px;
   margin: 0 auto;
-  margin-top: 5em;
+  margin-top: 7em;
   border: 12px solid #fff; }
 
 .logo {
@@ -153,11 +158,72 @@ body {
 .postLink:hover a {
   color: black; }
 
+/*SKATEBOARDS*/
 .viewBoards {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 100%;
-  background-color: yellow; }
+  width: 100%; }
   .viewBoards:last-child {
     margin-right: 0; }
+
+.contactPowell {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  background-color: #FCFCFC;
+  margin-top: 3em; }
+  .contactPowell:last-child {
+    margin-right: 0; }
+
+.contactInfo {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  padding-left: 2em; }
+  .contactInfo:last-child {
+    margin-right: 0; }
+
+.contactForm {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  margin-top: 1em;
+  display: block; }
+  .contactForm:last-child {
+    margin-right: 0; }
+
+.contactForm input {
+  display: block;
+  margin-top: 1em;
+  width: 90%;
+  height: 2.5em;
+  border-top: 4px solid #B2B2B2;
+  border-left: 4px solid #B2B2B2;
+  border-bottom: 1px solid #B2B2B2;
+  border-right: 1px solid #B2B2B2; }
+
+input[type=text],
+input[type=email] {
+  font-family: "Lato", sans-serif;
+  font-size: 0.8em;
+  font-weight: 300;
+  color: #fff;
+  padding-left: 2%;
+  text-transform: uppercase; }
+
+.contactForm textarea {
+  display: block;
+  margin: 1em 0;
+  width: 90%;
+  height: 10em;
+  border-top: 4px solid #B2B2B2;
+  border-left: 4px solid #B2B2B2;
+  border-bottom: 1px solid #B2B2B2;
+  border-right: 1px solid #B2B2B2; }
+
+.visitSocial {
+  list-style: none; }
