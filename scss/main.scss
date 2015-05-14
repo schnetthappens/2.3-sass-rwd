@@ -1,4 +1,4 @@
-/* $visual-grid: true !default; */
+$visual-grid: true !default;
 $border-box-sizing: true !default;
 
 /* @import 'reset'; */
@@ -41,6 +41,7 @@ body {
     .linkText {
       @include span-columns(3 of 12);
       background-color: $red;
+      opacity: 0.8;
       padding: 5px 15px;
       box-shadow: 0 3px 1px 2px $box-shadow;
     }
@@ -93,6 +94,14 @@ body {
 
     .viewBoards {
       @include span-columns (12);
+      background-color: #FCFCFC;
+      margin-top: 3em;
+      box-shadow: 0 3px 1px 2px $box-shadow;
+    }
+
+    .viewBoards img {
+      width: 10.8%;
+      padding: 1em;
     }
 
 
@@ -100,6 +109,7 @@ body {
       @include span-columns (12);
       background-color: $offWhite;
       margin-top: 3em;
+      box-shadow: 0 3px 1px 2px $box-shadow;
     }
 
       .contactInfo {
@@ -111,7 +121,6 @@ body {
         @include span-columns(6 of 12);
         margin-top: 1em;
         display: block;
-
       }
 
         .contactForm input {
