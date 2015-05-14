@@ -1,15 +1,69 @@
+$visual-grid: true !default;
+$border-box-sizing: true !default;
+
+
 @import '../bower_components/bourbon/app/assets/stylesheets/bourbon';
 @import '../bower_components/neat/app/assets/stylesheets/neat';
+/* @import 'reset'; */
+@import 'variables';
 
-@import 'reset';
-
-html {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
 
 body {
-
-
+  background-image: url("../images/bg.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
+
+  .content {
+    @include outer-container(1024px);
+    margin: 0 auto;
+    /* background-color: green; */
+    list-style: none;
+  }
+
+
+
+  .navLinks {
+    @include span-columns(12);
+    padding-left: 0;
+  }
+
+    .linkText {
+      @include span-columns(3 of 12);
+      font-family: $font-family;
+      text-align: center;
+      background-color: #C1001D;
+      text-transform: uppercase;
+      color: #fff;
+      padding: 5px 15px;
+      box-shadow: 0 3px 1px 2px $box-shadow;
+    }
+
+
+    .mainImage {
+      background-image: url("../images/top-image.png");
+      height: 350px;
+      margin: 0 auto;
+      margin-top: 5em;;
+      border: 12px solid #fff;
+    }
+
+    .viewPost {
+      @include span-columns(12);
+      /* background-color: blue; */
+      height: 350px;
+      margin-top: 60px;
+    }
+      .readPost {
+          @include span-columns(4 of 12);
+        }
+
+
+
+    .viewBoards {
+      @include span-columns (12);
+      background-color: yellow;
+    }
