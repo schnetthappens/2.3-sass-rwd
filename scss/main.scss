@@ -1,11 +1,12 @@
-$visual-grid: true !default;
+/* $visual-grid: true !default; */
 $border-box-sizing: true !default;
 
+/* @import 'reset'; */
 
 @import '../bower_components/bourbon/app/assets/stylesheets/bourbon';
 @import '../bower_components/neat/app/assets/stylesheets/neat';
-/* @import 'reset'; */
 @import 'variables';
+@import 'fonts';
 
 
 body {
@@ -39,11 +40,7 @@ body {
 
     .linkText {
       @include span-columns(3 of 12);
-      font-family: $font-family;
-      text-align: center;
-      background-color: #C1001D;
-      text-transform: uppercase;
-      color: #fff;
+      background-color: $red;
       padding: 5px 15px;
       box-shadow: 0 3px 1px 2px $box-shadow;
     }
@@ -69,11 +66,26 @@ body {
         height: 350px;
         margin-top: 60px;
       }
+
       .readPost {
           @include span-columns(4 of 12);
+          box-shadow: 0 3px 1px 2px $box-shadow;
         }
 
+      .postContent {
+        width: 85%;
+        margin: 0 auto;
+      }
 
+        .postContent a {
+          border-left: 1px solid $link-color;
+          border-right: 1px solid $link-color;
+          padding: 0 0.8em;
+        }
+
+          .postLink:hover a {
+            color: black;
+          }
 
     .viewBoards {
       @include span-columns (12);
