@@ -54,6 +54,22 @@ body {
     content: "";
     display: table; }
 
+.socialLinks {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%; }
+  .socialLinks:last-child {
+    margin-right: 0; }
+
+.icons {
+  float: left;
+  display: block;
+  margin-right: 4.82916%;
+  width: 47.58542%; }
+  .icons:last-child {
+    margin-right: 0; }
+
 .navLinks {
   float: left;
   display: block;
@@ -80,10 +96,16 @@ body {
 
 .mainImage {
   background-image: url("../images/top-image.png");
+  background-position: 40% 25%;
   height: 350px;
   margin: 0 auto;
   margin-top: 5em;
   border: 12px solid #fff; }
+
+.logo {
+  position: relative;
+  top: 46px;
+  left: 16px; }
 
 .viewPost {
   float: left;

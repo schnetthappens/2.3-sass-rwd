@@ -24,7 +24,13 @@ body {
     list-style: none;
   }
 
+  .socialLinks {
+    @include span-columns(6);
+  }
 
+    .icons {
+      @include span-columns (3 of 6);
+    }
 
   .navLinks {
     @include span-columns(12);
@@ -42,21 +48,27 @@ body {
       box-shadow: 0 3px 1px 2px $box-shadow;
     }
 
-
     .mainImage {
       background-image: url("../images/top-image.png");
+      background-position: 40% 25%;
       height: 350px;
       margin: 0 auto;
       margin-top: 5em;;
       border: 12px solid #fff;
     }
 
+      .logo {
+        position: relative;
+        top: 46px;
+        left: 16px;
+      }
+
     .viewPost {
-      @include span-columns(12);
-      /* background-color: blue; */
-      height: 350px;
-      margin-top: 60px;
-    }
+        @include span-columns(12);
+        /* background-color: blue; */
+        height: 350px;
+        margin-top: 60px;
+      }
       .readPost {
           @include span-columns(4 of 12);
         }
